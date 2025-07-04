@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Web Development - Learn HTML, CSS & JavaScript</title>
+</head>
+
+<body>
+    <!-- HTML Basics - Essential Tags Explained -->
+
+    <h1>HTML Basics: Essential Tags Explained</h1>
+
+    <h2>Document Structure Tags</h2>
+    <p>Every HTML document starts with these essential structure tags:</p>
+    <ul>
+        <li><strong>&lt;!DOCTYPE html&gt;</strong> - Declares this as an HTML5 document</li>
+        <li><strong>&lt;html&gt;</strong> - Root element that wraps all content</li>
+        <li><strong>&lt;head&gt;</strong> - Contains metadata (not visible on page)</li>
+        <li><strong>&lt;body&gt;</strong> - Contains all visible page content</li>
+    </ul>
+
+    <h2>Text and Heading Tags</h2>
+    <p>HTML provides six levels of headings:</p>
+    <h1>&lt;h1&gt;This is an H1 heading (largest)&lt;/h1&gt;</h1>
+    <h2>&lt;h2&gt;This is an H2 heading&lt;/h2&gt;</h2>
+    <h3>&lt;h3&gt;This is an H3 heading&lt;/h3&gt;</h3>
+    <h4>&lt;h4&gt;This is an H4 heading&lt;/h4&gt;</h4>
+    <h5>&lt;h5&gt;This is an H5 heading&lt;/h5&gt;</h5>
+    <h6>&lt;h6&gt;This is an H6 heading (smallest)&lt;/h6&gt;</h6>
+
+    <p>&lt;p&gt;This is a paragraph tag. It's used for regular text content and automatically adds spacing above and
+        below.&lt;/p&gt;</p>
+
+    <h2>Text Formatting Tags</h2>
+    <p>Here are common ways to format text:</p>
+    <ul>
+        <li><strong>&lt;strong&gt;Bold text&lt;/strong&gt;</strong> using &lt;strong&gt; tag</li>
+        <li><em>&lt;em&gt;Italic text&lt;/em&gt;</em> using &lt;em&gt; tag</li>
+        <li><u>&lt;u&gt;Underlined text&lt;/u&gt;</u> using &lt;u&gt; tag</li>
+        <li><mark>&lt;mark&gt;Highlighted text&lt;/mark&gt;</mark> using &lt;mark&gt; tag</li>
+        <li><small>&lt;small&gt;Small text&lt;/small&gt;</small> using &lt;small&gt; tag</li>
+    </ul>
+
+    <h2>List Tags</h2>
+    <h3>Unordered List (bullets)</h3>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Syntax:</strong></p>
+        <code>
+            &lt;ul&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;<br>
+            &lt;/ul&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+    </div>
+
+    <h3>Ordered List (numbers)</h3>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Syntax:</strong></p>
+        <code>
+            &lt;ol&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;First step&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Second step&lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt;Third step&lt;/li&gt;<br>
+            &lt;/ol&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <ol>
+            <li>First step</li>
+            <li>Second step</li>
+            <li>Third step</li>
+        </ol>
+    </div>
+
+    <h2>Link and Image Tags</h2>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Link Syntax:</strong></p>
+        <code>&lt;a href="https://www.example.com"&gt;This is a link to example.com&lt;/a&gt;</code>
+        <p><strong>Renders as:</strong></p>
+        <a href="https://www.example.com">This is a link to example.com</a>
+    </div>
+
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Image Syntax:</strong></p>
+        <code>&lt;img src="https://via.placeholder.com/150x100" alt="Placeholder image" width="150" height="100"&gt;</code>
+        <p><strong>Renders as:</strong></p>
+        <img src="https://via.placeholder.com/150x100" alt="Placeholder image" width="150" height="100">
+    </div>
+
+    <h2>Line Breaks and Horizontal Rules</h2>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Line Break Syntax:</strong></p>
+        <code>This is some text.&lt;br&gt;This text appears on a new line due to the &lt;br&gt; tag.</code>
+        <p><strong>Renders as:</strong></p>
+        <p>This is some text.<br>This text appears on a new line due to the &lt;br&gt; tag.</p>
+    </div>
+
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Horizontal Rule Syntax:</strong></p>
+        <code>&lt;hr&gt;</code>
+        <p><strong>Renders as:</strong></p>
+        <hr>
+        <p>The horizontal rule (&lt;hr&gt;) above creates a divider line.</p>
+    </div>
+
+    <!-- Block vs Inline Elements: Divs and Spans -->
+
+    <h2>Block vs Inline Elements</h2>
+
+    <h3>Block Elements (div examples)</h3>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Syntax:</strong></p>
+        <code>
+            &lt;div style="background-color: lightblue; padding: 10px; margin: 5px;"&gt;<br>
+            &nbsp;&nbsp;This is a div (block element).<br>
+            &lt;/div&gt;<br><br>
+            &lt;div style="background-color: lightgreen; padding: 10px; margin: 5px;"&gt;<br>
+            &nbsp;&nbsp;This is another div.<br>
+            &lt;/div&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <p>Block elements take up the full width available and start on a new line:</p>
+
+        <div style="background-color: lightblue; padding: 10px; margin: 5px;">
+            This is a div (block element). It takes up the full width and starts on a new line.
+        </div>
+
+        <div style="background-color: lightgreen; padding: 10px; margin: 5px;">
+            This is another div. Notice how it appears below the previous div, even though there's space.
+        </div>
+
+        <div style="background-color: lightyellow; padding: 10px; margin: 5px; width: 50%;">
+            Even when we set width to 50%, this div still starts on a new line.
+        </div>
+    </div>
+
+    <h3>Inline Elements (span examples)</h3>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Syntax:</strong></p>
+        <code>
+            &lt;p&gt;<br>
+            &nbsp;&nbsp;This is a paragraph with<br>
+            &nbsp;&nbsp;&lt;span style="background-color: lightcoral; padding: 5px;"&gt;inline span elements&lt;/span&gt;<br>
+            &nbsp;&nbsp;that flow<br>
+            &nbsp;&nbsp;&lt;span style="background-color: lightpink; padding: 5px;"&gt;within the text&lt;/span&gt;<br>
+            &nbsp;&nbsp;and don't break to new lines.<br>
+            &lt;/p&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <p>Inline elements only take up as much width as needed and don't start on a new line:</p>
+
+        <p>
+            This is a paragraph with
+            <span style="background-color: lightcoral; padding: 5px;">inline span elements</span>
+            that flow
+            <span style="background-color: lightpink; padding: 5px;">within the text</span>
+            and don't break to new lines.
+        </p>
+    </div>
+
+    <h3>Mixed Example</h3>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Syntax:</strong></p>
+        <code>
+            &lt;div style="background-color: #f0f0f0; padding: 10px; margin: 10px;"&gt;<br>
+            &nbsp;&nbsp;This div contains text and<br>
+            &nbsp;&nbsp;&lt;span style="background-color: yellow;"&gt;this span stays inline&lt;/span&gt;<br>
+            &nbsp;&nbsp;with the rest of the text in the div.<br>
+            &lt;/div&gt;<br><br>
+            &lt;div style="background-color: #e0e0e0; padding: 10px; margin: 10px;"&gt;<br>
+            &nbsp;&nbsp;&lt;span style="background-color: orange;"&gt;Multiple&lt;/span&gt;<br>
+            &nbsp;&nbsp;&lt;span style="background-color: cyan;"&gt;spans&lt;/span&gt;<br>
+            &nbsp;&nbsp;&lt;span style="background-color: pink;"&gt;in a row&lt;/span&gt;<br>
+            &nbsp;&nbsp;stay on the same line within this block div.<br>
+            &lt;/div&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <p>Here's what happens when we mix block and inline elements:</p>
+
+        <div style="background-color: #f0f0f0; padding: 10px; margin: 10px;">
+            This div contains text and
+            <span style="background-color: yellow;">this span stays inline</span>
+            with the rest of the text in the div.
+        </div>
+
+        <div style="background-color: #e0e0e0; padding: 10px; margin: 10px;">
+            <span style="background-color: orange;">Multiple</span>
+            <span style="background-color: cyan;">spans</span>
+            <span style="background-color: pink;">in a row</span>
+            stay on the same line within this block div.
+        </div>
+    </div>
+
+    <h3>Key Differences Summary</h3>
+    <ul>
+        <li><strong>Block elements (div):</strong> Take full width, start on new line, can have width/height set</li>
+        <li><strong>Inline elements (span):</strong> Only take needed width, flow with text, width/height ignored</li>
+    </ul>
+
+    <h3>Special HTML Elements</h3>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <h4>Horizontal Rule (&lt;hr&gt;)</h4>
+        <p><strong>What it does:</strong> Creates a horizontal line across the page to separate content sections.</p>
+        <p><strong>Syntax:</strong></p>
+        <code>
+            &lt;p&gt;Content above the line&lt;/p&gt;<br>
+            &lt;hr&gt;<br>
+            &lt;p&gt;Content below the line&lt;/p&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <p>Content above the line</p>
+        <hr>
+        <p>Content below the line</p>
+
+        <h4>Line Break (&lt;br&gt;)</h4>
+        <p><strong>What it does:</strong> Forces text to move to the next line without creating a new paragraph.</p>
+        <p><strong>Syntax:</strong></p>
+        <code>
+            &lt;p&gt;First line&lt;br&gt;<br>
+            Second line&lt;br&gt;<br>
+            Third line&lt;/p&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <p>First line<br>
+            Second line<br>
+            Third line</p>
+
+        <h4>Subscript (&lt;sub&gt;) and Superscript (&lt;sup&gt;)</h4>
+        <p><strong>What they do:</strong> Make text appear smaller and either below (subscript) or above (superscript)
+            the normal text line. Perfect for chemical formulas, math equations, and footnotes.</p>
+        <p><strong>Syntax:</strong></p>
+        <code>
+            &lt;p&gt;Water formula: H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;<br>
+            &lt;p&gt;Einstein's equation: E = mc&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;<br>
+            &lt;p&gt;Mathematical expression: x&lt;sup&gt;2&lt;/sup&gt; + y&lt;sub&gt;1&lt;/sub&gt; = z&lt;sup&gt;3&lt;/sup&gt;&lt;/p&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <p>Water formula: H<sub>2</sub>O</p>
+        <p>Einstein's equation: E = mc<sup>2</sup></p>
+        <p>Mathematical expression: x<sup>2</sup> + y<sub>1</sub> = z<sup>3</sup></p>
+
+        <h4>Key Points</h4>
+        <ul>
+            <li><strong>&lt;hr&gt;:</strong> Self-closing tag that creates a horizontal line (block element) - takes up
+                full width and starts on new line</li>
+            <li><strong>&lt;br&gt;:</strong> Self-closing tag that creates a line break (inline element) - just breaks
+                the line, doesn't add extra spacing</li>
+            <li><strong>&lt;sub&gt;:</strong> Makes text appear below the baseline (inline element) - flows with
+                surrounding text</li>
+            <li><strong>&lt;sup&gt;:</strong> Makes text appear above the baseline (inline element) - flows with
+                surrounding text</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
