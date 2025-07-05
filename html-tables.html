@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables - Learn to Create Data Tables</title>
+</head>
+
+<body>
+    <!-- HTML Tables - Complete Guide -->
+
+    <h1>HTML Tables: Complete Guide</h1>
+
+    <h2>What are HTML Tables?</h2>
+    <p>HTML tables are used to display data in rows and columns, similar to a spreadsheet. They're perfect for
+        presenting structured information like schedules, price lists, statistics, or any data that benefits from a grid
+        layout.</p>
+
+    <h2>Basic Table Structure</h2>
+    <p>Every HTML table is built using these essential tags:</p>
+    <ul>
+        <li><strong>&lt;table&gt;</strong> - The container for the entire table</li>
+        <li><strong>&lt;tr&gt;</strong> - Table row (horizontal)</li>
+        <li><strong>&lt;td&gt;</strong> - Table data cell (regular cell)</li>
+        <li><strong>&lt;th&gt;</strong> - Table header cell (bold and centered by default)</li>
+    </ul>
+
+    <h2>Simple Table Example</h2>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Code:</strong></p>
+        <code>
+            &lt;table border="1"&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;City&lt;/th&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;25&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;New York&lt;/td&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Sarah&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;30&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;London&lt;/td&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &lt;/table&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Sarah</td>
+                <td>30</td>
+                <td>London</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>Table Structure Tags</h2>
+    <p>For better organization and accessibility, tables can be divided into sections:</p>
+    <ul>
+        <li><strong>&lt;thead&gt;</strong> - Groups header content</li>
+        <li><strong>&lt;tbody&gt;</strong> - Groups body content</li>
+        <li><strong>&lt;tfoot&gt;</strong> - Groups footer content</li>
+    </ul>
+
+    <h2>Structured Table Example</h2>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Code:</strong></p>
+        <code>
+            &lt;table border="1"&gt;<br>
+            &nbsp;&nbsp;&lt;thead&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Product&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Price&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Quantity&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;/thead&gt;<br>
+            &nbsp;&nbsp;&lt;tbody&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Laptop&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$999&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;5&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mouse&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$25&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;20&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;/tbody&gt;<br>
+            &nbsp;&nbsp;&lt;tfoot&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;strong&gt;Total Items&lt;/strong&gt;&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;strong&gt;$1024&lt;/strong&gt;&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;strong&gt;25&lt;/strong&gt;&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;/tfoot&gt;<br>
+            &lt;/table&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Laptop</td>
+                    <td>$999</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>$25</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Total Items</strong></td>
+                    <td><strong>$1024</strong></td>
+                    <td><strong>25</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <h2>Spanning Cells</h2>
+    <p>You can make cells span multiple rows or columns:</p>
+    <ul>
+        <li><strong>colspan</strong> - Makes a cell span multiple columns</li>
+        <li><strong>rowspan</strong> - Makes a cell span multiple rows</li>
+    </ul>
+
+    <h3>Colspan Example</h3>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Code:</strong></p>
+        <code>
+            &lt;table border="1"&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th colspan="3"&gt;Monthly Sales Report&lt;/th&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Month&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Sales&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Target&lt;/th&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;January&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$5000&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$4500&lt;/td&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &lt;/table&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <table border="1">
+            <tr>
+                <th colspan="3">Monthly Sales Report</th>
+            </tr>
+            <tr>
+                <th>Month</th>
+                <th>Sales</th>
+                <th>Target</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$5000</td>
+                <td>$4500</td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>Rowspan Example</h3>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Code:</strong></p>
+        <code>
+            &lt;table border="1"&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Department&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Employee&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Role&lt;/th&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td rowspan="2"&gt;IT&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Alice&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Developer&lt;/td&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Bob&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Designer&lt;/td&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &lt;/table&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <table border="1">
+            <tr>
+                <th>Department</th>
+                <th>Employee</th>
+                <th>Role</th>
+            </tr>
+            <tr>
+                <td rowspan="2">IT</td>
+                <td>Alice</td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Designer</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>Table Caption</h2>
+    <p>Use the <strong>&lt;caption&gt;</strong> tag to add a title or description to your table:</p>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px; border-left: 3px solid #ccc;">
+        <p><strong>Code:</strong></p>
+        <code>
+            &lt;table border="1"&gt;<br>
+            &nbsp;&nbsp;&lt;caption&gt;Student Grades - Fall 2024&lt;/caption&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Student&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Grade&lt;/th&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Emma&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;A&lt;/td&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &lt;/table&gt;
+        </code>
+        <p><strong>Renders as:</strong></p>
+        <table border="1">
+            <caption>Student Grades - Fall 2024</caption>
+            <tr>
+                <th>Student</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Emma</td>
+                <td>A</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>Best Practices</h2>
+    <ul>
+        <li><strong>Use tables for tabular data only</strong> - Don't use tables for page layout</li>
+        <li><strong>Always include headers</strong> - Use &lt;th&gt; tags for better accessibility</li>
+        <li><strong>Add a caption</strong> - Helps users understand the table's purpose</li>
+        <li><strong>Use semantic structure</strong> - Include &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; when
+            appropriate</li>
+        <li><strong>Style with CSS</strong> - Use CSS instead of HTML attributes for styling</li>
+    </ul>
+
+    <h2>Quick Reference</h2>
+    <table border="1" style="margin: 20px 0;">
+        <caption>HTML Table Tags Quick Reference</caption>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Purpose</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>Container for entire table</td>
+                <td>&lt;table&gt;...&lt;/table&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Table row</td>
+                <td>&lt;tr&gt;...&lt;/tr&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>Header cell</td>
+                <td>&lt;th&gt;Name&lt;/th&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Data cell</td>
+                <td>&lt;td&gt;John&lt;/td&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;thead&gt;</td>
+                <td>Groups header rows</td>
+                <td>&lt;thead&gt;...&lt;/thead&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;tbody&gt;</td>
+                <td>Groups body rows</td>
+                <td>&lt;tbody&gt;...&lt;/tbody&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;tfoot&gt;</td>
+                <td>Groups footer rows</td>
+                <td>&lt;tfoot&gt;...&lt;/tfoot&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;caption&gt;</td>
+                <td>Table title/description</td>
+                <td>&lt;caption&gt;Sales Data&lt;/caption&gt;</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Remember:</strong> Tables are powerful tools for displaying structured data. Use them wisely and always
+        consider accessibility by including proper headers and captions!</p>
+
+    <hr>
+
+</body>
+
+</html>
