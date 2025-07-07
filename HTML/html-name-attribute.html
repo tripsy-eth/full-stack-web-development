@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Name Attribute - Complete Guide</title>
+</head>
+
+<body>
+    <h1>HTML Name Attribute: Complete Guide</h1>
+
+    <h2>What is the Name Attribute?</h2>
+    <p>The name attribute is used to specify a name for an HTML element, particularly form elements. It's essential for:
+    </p>
+    <ul>
+        <li>Identifying form data when submitted to a server</li>
+        <li>Referencing form elements in JavaScript</li>
+        <li>Grouping radio buttons together</li>
+    </ul>
+
+    <h2>Common Uses of Name Attribute</h2>
+
+    <h3>1. Text Input Fields</h3>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px;">
+        <p><strong>Example:</strong></p>
+        <input type="text" name="username" placeholder="Enter username">
+        <p><strong>Code:</strong></p>
+        <code>&lt;input type="text" name="username" placeholder="Enter username"&gt;</code>
+    </div>
+
+    <h3>2. Radio Buttons</h3>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px;">
+        <p><strong>Example:</strong></p>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <p><strong>Code:</strong></p>
+        <code>
+            &lt;input type="radio" name="gender" value="male"&gt; Male<br>
+            &lt;input type="radio" name="gender" value="female"&gt; Female
+        </code>
+    </div>
+
+    <h3>3. Checkboxes</h3>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px;">
+        <p><strong>Example:</strong></p>
+        <input type="checkbox" name="hobbies[]" value="reading"> Reading
+        <input type="checkbox" name="hobbies[]" value="gaming"> Gaming
+        <p><strong>Code:</strong></p>
+        <code>
+            &lt;input type="checkbox" name="hobbies[]" value="reading"&gt; Reading<br>
+            &lt;input type="checkbox" name="hobbies[]" value="gaming"&gt; Gaming
+        </code>
+    </div>
+
+    <h3>4. Select Dropdown</h3>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px;">
+        <p><strong>Example:</strong></p>
+        <select name="country">
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select>
+        <p><strong>Code:</strong></p>
+        <code>
+            &lt;select name="country"&gt;<br>
+            &nbsp;&nbsp;&lt;option value="usa"&gt;USA&lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="uk"&gt;UK&lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="canada"&gt;Canada&lt;/option&gt;<br>
+            &lt;/select&gt;
+        </code>
+    </div>
+
+    <h2>Form Example with Multiple Name Attributes</h2>
+    <form style="background-color: #f5f5f5; padding: 20px; margin: 10px;">
+        <label>Username: <input type="text" name="user_name"></label><br><br>
+        <label>Email: <input type="email" name="user_email"></label><br><br>
+        <label>Password: <input type="password" name="user_password"></label><br><br>
+        <input type="submit" value="Submit Form">
+    </form>
+
+    <p><strong>Note:</strong> When a form is submitted, the name attribute is used to identify each form control in the
+        submitted data. The server receives the data as name/value pairs.</p>
+
+    <h2>YouTube Search Form Example</h2>
+    <div style="background-color: #f5f5f5; padding: 10px; margin: 10px;">
+        <p><strong>Example:</strong></p>
+        <form action="https://www.youtube.com/results" method="get">
+            <label>
+                Search YouTube:
+                <input type="search" name="search_query" placeholder="Enter your search...">
+            </label>
+            <button type="submit">Search YouTube</button>
+        </form>
+
+        <p><strong>Code:</strong></p>
+        <code>
+            &lt;form action="https://www.youtube.com/results" method="get"&gt;<br>
+            &nbsp;&nbsp;&lt;label&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Search YouTube:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="search" name="search_query" placeholder="Enter your search..."&gt;<br>
+            &nbsp;&nbsp;&lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;button type="submit"&gt;Search YouTube&lt;/button&gt;<br>
+            &lt;/form&gt;
+        </code>
+    </div>
+</body>
+
+</html>
