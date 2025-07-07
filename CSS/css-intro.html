@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Introduction - Complete Guide</title>
+    <link rel="stylesheet" href="css-intro.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <h1 class="main-title">CSS Introduction</h1>
+        <p class="subtitle">A Complete Guide to Cascading Style Sheets</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="#basics" class="nav-link">CSS Basics</a></li>
+            <li><a href="#selectors" class="nav-link">Selectors</a></li>
+            <li><a href="#properties" class="nav-link">Properties</a></li>
+            <li><a href="#box-model" class="nav-link">Box Model</a></li>
+            <li><a href="#layout" class="nav-link">Layout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- CSS Basics Section -->
+        <section id="basics" class="content-section">
+            <h2 class="section-title">1. CSS Basics</h2>
+            <div class="explanation-box">
+                <h3>What is CSS?</h3>
+                <p>CSS (Cascading Style Sheets) is a styling language used to describe the presentation of HTML
+                    documents. It controls layout, colors, fonts, and other visual aspects.</p>
+            </div>
+
+            <div class="code-example">
+                <h3>Basic CSS Syntax</h3>
+                <div class="syntax-demo">
+                    <span class="selector">selector</span> {<br>
+                    &nbsp;&nbsp;<span class="property">property</span>: <span class="value">value</span>;<br>
+                    }
+                </div>
+            </div>
+        </section>
+
+        <!-- Selectors Section -->
+        <section id="selectors" class="content-section">
+            <h2 class="section-title">2. CSS Selectors</h2>
+
+            <div class="selector-examples">
+                <div class="example-card">
+                    <h3>Element Selector</h3>
+                    <p class="demo-text">This paragraph uses element selector styling.</p>
+                    <code>p { color: blue; }</code>
+                </div>
+
+                <div class="example-card">
+                    <h3>Class Selector</h3>
+                    <p class="highlighted-text">This paragraph uses class selector styling.</p>
+                    <code>.highlighted-text { background-color: yellow; }</code>
+                </div>
+
+                <div class="example-card">
+                    <h3>ID Selector</h3>
+                    <p id="unique-paragraph">This paragraph uses ID selector styling.</p>
+                    <code>#unique-paragraph { font-weight: bold; }</code>
+                </div>
+
+                <div class="example-card">
+                    <h3>Descendant Selector</h3>
+                    <div class="container">
+                        <p>This paragraph is inside a container div.</p>
+                    </div>
+                    <code>.container p { margin-left: 20px; }</code>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Section -->
+        <section id="properties" class="content-section">
+            <h2 class="section-title">3. Common CSS Properties</h2>
+
+            <div class="properties-grid">
+                <div class="property-card">
+                    <h3>Text Properties</h3>
+                    <p class="text-example">This text demonstrates various text properties including font-size,
+                        font-family, text-align, and line-height.</p>
+                </div>
+
+                <div class="property-card">
+                    <h3>Color Properties</h3>
+                    <div class="color-examples">
+                        <div class="color-box bg-red">Background Color</div>
+                        <div class="color-box text-green">Text Color</div>
+                        <div class="color-box border-blue">Border Color</div>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <h3>Spacing Properties</h3>
+                    <div class="spacing-demo">
+                        <div class="spacing-box">Margin & Padding Demo</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Box Model Section -->
+        <section id="box-model" class="content-section">
+            <h2 class="section-title">4. CSS Box Model</h2>
+
+            <div class="box-model-demo">
+                <div class="box-model-container">
+                    <div class="box-model-element">
+                        <span class="content-label">Content</span>
+                        <span class="padding-label">Padding</span>
+                        <span class="border-label">Border</span>
+                        <span class="margin-label">Margin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-model-explanation">
+                <h3>Box Model Components:</h3>
+                <ul class="box-model-list">
+                    <li><strong>Content:</strong> The actual content of the element</li>
+                    <li><strong>Padding:</strong> Space between content and border</li>
+                    <li><strong>Border:</strong> Border around the element</li>
+                    <li><strong>Margin:</strong> Space outside the element</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Layout Section -->
+        <section id="layout" class="content-section">
+            <h2 class="section-title">5. CSS Layout</h2>
+
+            <div class="layout-examples">
+                <div class="layout-card">
+                    <h3>Display Property</h3>
+                    <div class="display-demo">
+                        <span class="inline-element">Inline</span>
+                        <span class="inline-element">Elements</span>
+                        <div class="block-element">Block Element</div>
+                        <div class="block-element">Another Block</div>
+                    </div>
+                </div>
+
+                <div class="layout-card">
+                    <h3>Flexbox Layout</h3>
+                    <div class="flex-container">
+                        <div class="flex-item">Item 1</div>
+                        <div class="flex-item">Item 2</div>
+                        <div class="flex-item">Item 3</div>
+                    </div>
+                </div>
+
+                <div class="layout-card">
+                    <h3>Grid Layout</h3>
+                    <div class="grid-container">
+                        <div class="grid-item">Grid Item 1</div>
+                        <div class="grid-item">Grid Item 2</div>
+                        <div class="grid-item">Grid Item 3</div>
+                        <div class="grid-item">Grid Item 4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Examples -->
+        <section class="content-section">
+            <h2 class="section-title">6. Interactive Examples</h2>
+
+            <div class="interactive-demos">
+                <div class="demo-card">
+                    <h3>Hover Effects</h3>
+                    <button class="hover-button">Hover over me!</button>
+                </div>
+
+                <div class="demo-card">
+                    <h3>Transitions</h3>
+                    <div class="transition-box">Hover for transition effect</div>
+                </div>
+
+                <div class="demo-card">
+                    <h3>Responsive Design</h3>
+                    <div class="responsive-box">
+                        This box adapts to different screen sizes
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 CSS Introduction Guide. Practice and experiment with these examples!</p>
+    </footer>
+</body>
+
+</html>

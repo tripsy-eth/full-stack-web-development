@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Manipulation - Complete Guide</title>
+    <link rel="stylesheet" href="css-text-manipulation.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <h1 class="main-title">CSS Text Manipulation</h1>
+        <p class="subtitle">Master the Art of Typography and Text Styling</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="#font-properties" class="nav-link">Font Properties</a></li>
+            <li><a href="#text-formatting" class="nav-link">Text Formatting</a></li>
+            <li><a href="#text-effects" class="nav-link">Text Effects</a></li>
+            <li><a href="#text-layout" class="nav-link">Text Layout</a></li>
+            <li><a href="#advanced-text" class="nav-link">Advanced Text</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Font Properties Section -->
+        <section id="font-properties" class="content-section">
+            <h2 class="section-title">1. Font Properties</h2>
+
+            <div class="properties-grid">
+                <div class="property-card">
+                    <h3>Font Family</h3>
+                    <p class="font-serif">This text uses serif font family (Georgia)</p>
+                    <p class="font-sans">This text uses sans-serif font family (Arial)</p>
+                    <p class="font-mono">This text uses monospace font family (Courier)</p>
+                    <code>font-family: Georgia, serif;</code>
+                </div>
+
+                <div class="property-card">
+                    <h3>Font Size</h3>
+                    <p class="font-small">Small text (12px)</p>
+                    <p class="font-medium">Medium text (16px)</p>
+                    <p class="font-large">Large text (24px)</p>
+                    <p class="font-xlarge">Extra large text (32px)</p>
+                    <code>font-size: 24px;</code>
+                </div>
+
+                <div class="property-card">
+                    <h3>Font Weight</h3>
+                    <p class="font-light">Light weight text (300)</p>
+                    <p class="font-normal">Normal weight text (400)</p>
+                    <p class="font-medium-weight">Medium weight text (500)</p>
+                    <p class="font-bold">Bold weight text (700)</p>
+                    <p class="font-black">Black weight text (900)</p>
+                    <code>font-weight: bold;</code>
+                </div>
+
+                <div class="property-card">
+                    <h3>Font Style</h3>
+                    <p class="font-normal-style">Normal style text</p>
+                    <p class="font-italic">Italic style text</p>
+                    <p class="font-oblique">Oblique style text</p>
+                    <code>font-style: italic;</code>
+                </div>
+            </div>
+        </section>
+
+        <!-- Text Formatting Section -->
+        <section id="text-formatting" class="content-section">
+            <h2 class="section-title">2. Text Formatting</h2>
+
+            <div class="formatting-examples">
+                <div class="example-card">
+                    <h3>Text Color</h3>
+                    <p class="text-red">Red colored text</p>
+                    <p class="text-green">Green colored text</p>
+                    <p class="text-blue">Blue colored text</p>
+                    <p class="text-purple">Purple colored text</p>
+                    <code>color: #e53e3e;</code>
+                </div>
+
+                <div class="example-card">
+                    <h3>Text Alignment</h3>
+                    <p class="text-left">This text is left-aligned. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</p>
+                    <p class="text-center">This text is center-aligned. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                    <p class="text-right">This text is right-aligned. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</p>
+                    <p class="text-justify">This text is justified. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <code>text-align: center;</code>
+                </div>
+
+                <div class="example-card">
+                    <h3>Text Decoration</h3>
+                    <p class="text-underline">Underlined text</p>
+                    <p class="text-overline">Overlined text</p>
+                    <p class="text-line-through">Line-through text</p>
+                    <p class="text-no-decoration">No decoration text</p>
+                    <code>text-decoration: underline;</code>
+                </div>
+
+                <div class="example-card">
+                    <h3>Text Transform</h3>
+                    <p class="text-uppercase">uppercase text</p>
+                    <p class="text-lowercase">LOWERCASE TEXT</p>
+                    <p class="text-capitalize">capitalize each word</p>
+                    <code>text-transform: uppercase;</code>
+                </div>
+            </div>
+        </section>
+
+        <!-- Text Effects Section -->
+        <section id="text-effects" class="content-section">
+            <h2 class="section-title">3. Text Effects</h2>
+
+            <div class="effects-grid">
+                <div class="effect-card">
+                    <h3>Text Shadow</h3>
+                    <p class="shadow-simple">Simple shadow effect</p>
+                    <p class="shadow-multiple">Multiple shadow effect</p>
+                    <p class="shadow-glow">Glowing shadow effect</p>
+                    <p class="shadow-3d">3D shadow effect</p>
+                    <code>text-shadow: 2px 2px 4px rgba(0,0,0,0.5);</code>
+                </div>
+
+                <div class="effect-card">
+                    <h3>Letter Spacing</h3>
+                    <p class="letter-tight">Tight letter spacing</p>
+                    <p class="letter-normal">Normal letter spacing</p>
+                    <p class="letter-wide">Wide letter spacing</p>
+                    <p class="letter-very-wide">Very wide letter spacing</p>
+                    <code>letter-spacing: 0.2em;</code>
+                </div>
+
+                <div class="effect-card">
+                    <h3>Word Spacing</h3>
+                    <p class="word-tight">Tight word spacing</p>
+                    <p class="word-normal">Normal word spacing</p>
+                    <p class="word-wide">Wide word spacing</p>
+                    <code>word-spacing: 0.5em;</code>
+                </div>
+
+                <div class="effect-card">
+                    <h3>Line Height</h3>
+                    <p class="line-tight">Tight line height. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="line-normal">Normal line height. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="line-loose">Loose line height. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <code>line-height: 2;</code>
+                </div>
+            </div>
+        </section>
+
+        <!-- Text Layout Section -->
+        <section id="text-layout" class="content-section">
+            <h2 class="section-title">4. Text Layout</h2>
+
+            <div class="layout-examples">
+                <div class="layout-card">
+                    <h3>Text Overflow</h3>
+                    <div class="overflow-container">
+                        <p class="text-clip">This is a very long text that will be clipped when it overflows the
+                            container</p>
+                        <p class="text-ellipsis">This is a very long text that will show ellipsis when it overflows the
+                            container</p>
+                    </div>
+                    <code>text-overflow: ellipsis;</code>
+                </div>
+
+                <div class="layout-card">
+                    <h3>White Space</h3>
+                    <div class="whitespace-demo">
+                        <p class="white-normal">Normal: Multiple spaces and
+                            line breaks are collapsed</p>
+                        <p class="white-pre">Pre: Multiple spaces and
+                            line breaks are preserved</p>
+                        <p class="white-nowrap">No wrap: This text will not wrap to the next line even if it's very long
+                            and exceeds the container width</p>
+                    </div>
+                    <code>white-space: pre;</code>
+                </div>
+
+                <div class="layout-card">
+                    <h3>Text Indent</h3>
+                    <p class="text-indent">This paragraph has a first line indent. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <p class="text-indent-negative">This paragraph has a negative indent (hanging indent). Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.</p>
+                    <code>text-indent: 2em;</code>
+                </div>
+
+                <div class="layout-card">
+                    <h3>Vertical Alignment</h3>
+                    <div class="vertical-align-demo">
+                        <span class="align-baseline">Baseline</span>
+                        <span class="align-top">Top</span>
+                        <span class="align-middle">Middle</span>
+                        <span class="align-bottom">Bottom</span>
+                        <span class="align-sub">Subscript</span>
+                        <span class="align-super">Superscript</span>
+                    </div>
+                    <code>vertical-align: middle;</code>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Text Section -->
+        <section id="advanced-text" class="content-section">
+            <h2 class="section-title">5. Advanced Text Techniques</h2>
+
+            <div class="advanced-examples">
+                <div class="advanced-card">
+                    <h3>Gradient Text</h3>
+                    <h2 class="gradient-text">Gradient Text Effect</h2>
+                    <p class="gradient-text-small">Small gradient text</p>
+                    <code>background: linear-gradient(...);<br>-webkit-background-clip: text;</code>
+                </div>
+
+                <div class="advanced-card">
+                    <h3>Text Stroke</h3>
+                    <h2 class="stroke-text">Stroke Text Effect</h2>
+                    <p class="stroke-text-small">Small stroke text</p>
+                    <code>-webkit-text-stroke: 2px #333;</code>
+                </div>
+
+                <div class="advanced-card">
+                    <h3>Text Animation</h3>
+                    <h2 class="animated-text">Animated Text</h2>
+                    <p class="typing-text">This text has a typing animation effect...</p>
+                    <code>animation: typing 3s steps(40, end);</code>
+                </div>
+
+                <div class="advanced-card">
+                    <h3>Text Selection</h3>
+                    <p class="custom-selection">Try selecting this text to see custom selection colors</p>
+                    <code>::selection { background: #ff6b6b; color: white; }</code>
+                </div>
+
+                <div class="advanced-card">
+                    <h3>Responsive Typography</h3>
+                    <h2 class="responsive-text">Responsive Text</h2>
+                    <p class="responsive-paragraph">This text size adapts to the screen size. Resize your browser window
+                        to see the effect.</p>
+                    <code>font-size: clamp(1rem, 4vw, 2rem);</code>
+                </div>
+
+                <div class="advanced-card">
+                    <h3>Text with Background</h3>
+                    <p class="text-bg-highlight">Highlighted text with background</p>
+                    <p class="text-bg-gradient">Text with gradient background</p>
+                    <p class="text-bg-image">Text with image background</p>
+                    <code>background: linear-gradient(...);</code>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Examples -->
+        <section class="content-section">
+            <h2 class="section-title">6. Interactive Text Examples</h2>
+
+            <div class="interactive-demos">
+                <div class="demo-card">
+                    <h3>Hover Effects</h3>
+                    <p class="hover-text">Hover over this text to see effects</p>
+                    <p class="hover-scale">Hover to scale this text</p>
+                    <p class="hover-color">Hover to change color</p>
+                </div>
+
+                <div class="demo-card">
+                    <h3>Text Transitions</h3>
+                    <p class="transition-text">Text with smooth transitions</p>
+                    <button class="text-button">Button with text effects</button>
+                </div>
+
+                <div class="demo-card">
+                    <h3>Dynamic Text</h3>
+                    <p class="dynamic-text" id="dynamicText">This text changes on hover</p>
+                    <p class="pulse-text">Pulsing text effect</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Scale -->
+        <section class="content-section">
+            <h2 class="section-title">7. Typography Scale</h2>
+
+            <div class="typography-scale">
+                <h1 class="scale-h1">Heading 1 - 48px</h1>
+                <h2 class="scale-h2">Heading 2 - 36px</h2>
+                <h3 class="scale-h3">Heading 3 - 30px</h3>
+                <h4 class="scale-h4">Heading 4 - 24px</h4>
+                <h5 class="scale-h5">Heading 5 - 20px</h5>
+                <h6 class="scale-h6">Heading 6 - 16px</h6>
+                <p class="scale-body">Body text - 16px</p>
+                <p class="scale-small">Small text - 14px</p>
+                <p class="scale-caption">Caption text - 12px</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 CSS Text Manipulation Guide. Master typography with these examples!</p>
+    </footer>
+</body>
+
+</html>
